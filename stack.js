@@ -23,6 +23,7 @@ class Stack {
     const newNode = new Node(val);
     if(this.size===0){
       this.first = newNode;
+      this.last = newNode;
     }else{
       newNode.next = this.first;
       this.first = newNode;
